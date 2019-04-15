@@ -41,7 +41,7 @@ public class Comisaria {
 				0, detenidosAux.length);
 		personasDetenidas[personasDetenidas.length-1] = persona;	
 	}
-	
+	//Comentario
 	public boolean hayMasPersonasDetenidasQuePolicias() {
 		return personasDetenidas.length > policias.length;
 	}
