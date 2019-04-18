@@ -12,6 +12,7 @@ public class Persona {
 		this.identificador = ++contador;
 		this.nombre = nombre;
 		this.edad = edad;
+		this.direccion = direccion;
 	}
 	public boolean isMayorEdad() {
 		return edad>=18;
