@@ -21,4 +21,11 @@ public class Persona {
 		return direccion.
 				contains("calle");
 	}
+	public void setIdentificador(int id) {
+		if (id < 0)
+			throw new IllegalArgumentException();
+		else 
+			this.identificador = id;
+	}
+
 }
