@@ -1,4 +1,4 @@
-package comisaria;
+package Comisaria;
 
 public class Comisaria {
 	private Policia[] policias;

@@ -1,11 +1,11 @@
-package comisaria;
+package Comisaria;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import comisaria.Persona;
+import Comisaria.Persona;
 
 public class contieneCalleTest {
 	

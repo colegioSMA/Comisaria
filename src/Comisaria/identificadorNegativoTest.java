@@ -1,11 +1,11 @@
-package comisaria;
+package Comisaria;
 
 import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import comisaria.Persona;
+import Comisaria.Persona;
 
 public class identificadorNegativoTest {
 	

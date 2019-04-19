@@ -1,13 +1,13 @@
-package comisaria;
+package Comisaria;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import comisaria.Comisaria;
-import comisaria.Persona;
-import comisaria.Policia;
+import Comisaria.Comisaria;
+import Comisaria.Persona;
+import Comisaria.Policia;
 
 public class hayMasPersonasDetenidasQuePoliciasTest {
 	
