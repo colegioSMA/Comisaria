@@ -30,6 +30,30 @@ public class Policia {
 	public void setIdentificador(int identificador) {
 		this.identificador = identificador;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Policia other = (Policia) obj;
+		if (direccionCasa == null) {
+			if (other.direccionCasa != null)
+				return false;
+		} else if (!direccionCasa.equals(other.direccionCasa))
+			return false;
+		if (identificador != other.identificador)
+			return false;
+		if (nombre == null) {
+			if (other.nombre != null)
+				return false;
+		} else if (!nombre.equals(other.nombre))
+			return false;
+		return true;
+	}
 	
 	
 }
