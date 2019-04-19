@@ -24,6 +24,12 @@ public class Policia {
 	public void setDireccionCasa(String direccionCasa) {
 		this.direccionCasa = direccionCasa;
 	}
+	public int getIdentificador() {
+		return identificador;
+	}
+	public void setIdentificador(int identificador) {
+		this.identificador = identificador;
+	}
 	
 	
 }
