@@ -27,7 +27,7 @@ public class hayMasPersonasDetenidasQuePoliciasTest {
 	}
 
 	@Test
-	public void test() {
+	public void test1() {
 
 		comisaria.addDetenido(new Persona("Manuel", 19, "calle Direccion1"));
 		comisaria.addDetenido(new Persona("Pedro", 16, "calle Direccion2"));
@@ -35,10 +35,24 @@ public class hayMasPersonasDetenidasQuePoliciasTest {
 		
 		comisaria.addPolicia(new Policia("Manuel", "calle Direccion1"));
 		comisaria.addPolicia(new Policia("Pedro", "calle Direccion2"));
-		comisaria.addPolicia(new Policia("Miguel", "calle Direccion3"));
+		//comisaria.addPolicia(new Policia("Miguel", "calle Direccion3"));
 		
-		
+		assertTrue(comisaria.hayMasPersonasDetenidasQuePolicias());
 		
 	}
 
+	@Test
+	public void test2() {
+
+		comisaria.addDetenido(new Persona("Manuel", 19, "calle Direccion1"));
+		comisaria.addDetenido(new Persona("Pedro", 16, "calle Direccion2"));
+		//comisaria.addDetenido(new Persona("Miguel", 35, "calle Direccion3"));
+		
+		comisaria.addPolicia(new Policia("Manuel", "calle Direccion1"));
+		comisaria.addPolicia(new Policia("Pedro", "calle Direccion2"));
+		comisaria.addPolicia(new Policia("Miguel", "calle Direccion3"));
+		
+		assertFalse(comisaria.hayMasPersonasDetenidasQuePolicias());
+		
+	}
 }
