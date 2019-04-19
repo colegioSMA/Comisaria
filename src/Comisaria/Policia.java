@@ -54,6 +54,11 @@ public class Policia {
 			return false;
 		return true;
 	}
+	@Override
+	public String toString() {
+		return "Policia [identificador=" + identificador + ", nombre=" + nombre + ", direccionCasa=" + direccionCasa
+				+ "]";
+	}
 	
 	
 }

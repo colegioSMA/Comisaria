@@ -57,5 +57,10 @@ public class Persona {
 			return false;
 		return true;
 	}
+	@Override
+	public String toString() {
+		return "Persona [identificador=" + identificador + ", nombre=" + nombre + ", edad=" + edad + ", direccion="
+				+ direccion + "]";
+	}
 	
 }
