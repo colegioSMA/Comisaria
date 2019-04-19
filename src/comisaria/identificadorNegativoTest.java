@@ -1,4 +1,4 @@
-package test;
+package comisaria;
 
 import static org.junit.Assert.fail;
 
