@@ -49,9 +49,7 @@ public class Comisaria {
 		return personasDetenidas;
 	}
 
-	public void setPersonasDetenidas(Persona[] personasDetenidas) {
-		this.personasDetenidas = personasDetenidas;
-	}
+	
 
 	public Policia[] getPolicias() {
 		return policias;
