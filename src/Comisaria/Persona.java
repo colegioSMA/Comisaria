@@ -24,8 +24,12 @@ public class Persona {
 	public int getIdentificador() {
 		return identificador;
 	}
-	public void setIdentificador(int identificador) {
-		this.identificador = identificador;
+
+	public void setIdentificador(int id) {
+		if (id < 0)
+			throw new IllegalArgumentException();
+		else
+			this.identificador = id;
 	}
 	
 	@Override
