@@ -4,17 +4,16 @@ public class Persona {
 	private static int contador = 0;
 	private int identificador;
 	private String nombre;
-	private int edad;
+	private static int edad;
 	private String direccion;
 	public Persona(String nombre, int edad,
 			String direccion) {
 		super();
 		this.identificador = ++contador;
 		this.nombre = nombre;
-		this.edad = edad;
-		this.direccion = direccion;
+		Persona.edad = edad;
 	}
-	public boolean isMayorEdad() {
+	public static boolean isMayorEdad() {
 		return edad>=18;
 	}
 	public boolean contieneCalle() {
@@ -27,5 +26,4 @@ public class Persona {
 		else 
 			this.identificador = id;
 	}
-
 }

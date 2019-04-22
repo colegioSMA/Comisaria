@@ -1,5 +1,4 @@
 package comisaria;
-
 public class Comisaria {
 	private Policia[] policias;
 	private Persona[] personasDetenidas;
@@ -45,12 +44,9 @@ public class Comisaria {
 	public boolean hayMasPersonasDetenidasQuePolicias() {
 		return personasDetenidas.length > policias.length;
 	}
+	
 	public Persona[] getPersonasDetenidas() {
 		return personasDetenidas;
-	}
-
-	public void setPersonasDetenidas(Persona[] personasDetenidas) {
-		this.personasDetenidas = personasDetenidas;
 	}
 
 	public Policia[] getPolicias() {
