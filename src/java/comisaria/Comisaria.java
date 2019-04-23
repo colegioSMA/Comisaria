@@ -1,8 +1,8 @@
 package comisaria;
 
 public class Comisaria {
-	private Policia[] policias;
-	private Persona[] personasDetenidas;
+	private static Policia[] policias;
+	public static Persona[] personasDetenidas;
 	
 	
 
@@ -12,7 +12,7 @@ public class Comisaria {
 		this.personasDetenidas = personasDetenidas;
 	}
 	
-	public void addPolicia(Policia policia) {
+	public static void addPolicia(Policia policia) {
 		
 		Policia [] policiasAux = new Policia[policias.length];
 		
@@ -27,7 +27,7 @@ public class Comisaria {
 		
 	}
 	
-	public void addDetenido(Persona persona) {
+	public static void addDetenido(Persona persona) {
 		
 		Persona [] detenidosAux = new Persona[personasDetenidas.length];
 		
@@ -42,7 +42,7 @@ public class Comisaria {
 		personasDetenidas[personasDetenidas.length-1] = persona;	
 	}
 	
-	public boolean hayMasPersonasDetenidasQuePolicias() {
+	public static boolean hayMasPersonasDetenidasQuePolicias() {
 		return personasDetenidas.length > policias.length;
 	}
 	public Persona[] getPersonasDetenidas() {
