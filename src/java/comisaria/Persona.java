@@ -4,6 +4,7 @@ public class Persona {
 	private static int contador = 0;
 	private int identificador;
 	private String nombre;
+	
 	private int edad;
 	private String direccion;
 	public Persona(String nombre, int edad,
