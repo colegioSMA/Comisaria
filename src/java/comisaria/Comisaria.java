@@ -39,6 +39,7 @@ public class Comisaria {
 		
 		System.arraycopy(detenidosAux, 0, personasDetenidas, 
 				0, detenidosAux.length);
+		
 		personasDetenidas[personasDetenidas.length-1] = persona;	
 	}
 	
