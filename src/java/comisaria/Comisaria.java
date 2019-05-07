@@ -1,5 +1,5 @@
 package comisaria;
-
+// comentario de prueba
 public class Comisaria {
 	private Policia[] policias;
 	private Persona[] personasDetenidas;
