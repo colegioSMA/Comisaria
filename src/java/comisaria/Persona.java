@@ -6,7 +6,7 @@ public class Persona {
 	private String nombre;
 	private int edad;
 	private String direccion;
-	//Esto es un constructor
+	
 	public Persona(String nombre, int edad,
 			String direccion) {
 		super();
